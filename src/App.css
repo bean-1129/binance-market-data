@@ -1,38 +1,71 @@
-.App {
+/* App.css */
+
+body {
+  font-family: Arial, sans-serif;
+  background-image: url('https://images.unsplash.com/photo-1644361566696-3d442b5b482a?q=80&w=1856&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+}
+
+h2 {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+
+
+
+label {
+  font-weight: bold;
+  margin-right: 5px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.chart {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-top: 10%;
+  margin-left: 25%;
+  width: 90%;
+  max-width: 800px;
+  border: 1px solid #ccc;
+  padding: 20px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+  background-color: #f8f9fa;
 }
 
-.App-link {
-  color: #61dafb;
+/* Responsive styles */
+@media (max-width: 768px) {
+  .chart {
+      width: 90%;
+      margin-top: 12%;
+      margin-left: 2%;
+      padding: 15px;
+  }
+
+  
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media (max-width: 480px) {
+  .chart {
+      width: 100%;
+      margin-top: 20%;
+      box-shadow: none;
+      background: none;
+      border: none;
   }
-  to {
-    transform: rotate(360deg);
+
+
+  h2 {
+      font-size: 1.2em;
   }
+
+  button {
+      width: 100%;
+      font-size: 0.9em;
+  }
+}
+
+.coinSelect{
+  padding: 5px;
 }
